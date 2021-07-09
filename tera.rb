@@ -7,6 +7,7 @@ class Tera < Formula
     depends_on "mpv"
     depends_on "gh"
     depends_on "jq"
+    depends_on "fzf"
 
     def install
         bin.install Dir["./images"]
