@@ -12,7 +12,7 @@ class Tera < Formula
     def install
         bin.install Dir["./images"]
         bin.install "delete_station"
-        bin.install "gist"
+        bin.install "gistlib"
         bin.install "lib"
         bin.install "LICENSE"
         bin.install "list"
