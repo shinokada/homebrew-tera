@@ -1,13 +1,14 @@
 class Tera < Formula
     desc "Terminal radio, TERA, plays radio, CRUD favorites, search radio stations. Powered by Radio Browser API and MPV, a free, open source, and cross-platform media player."
-    url "https://github.com/shinokada/tera/archive/refs/tags/v0.3.7.tar.gz"
-    sha256 "f3d1bf26e3a4b4ab0d45ade71d016ae8ea4725d0d90b2febb91b8506d00fd44c"
+    url "https://github.com/shinokada/tera/archive/refs/tags/v0.3.8.tar.gz"
+    sha256 "14f78e05fcde4d982f43f701d4e711cf93c478cd456c457af4d5b369c3a286b9"
     license "MIT"
   
     depends_on "mpv"
     depends_on "gh"
     depends_on "jq"
     depends_on "fzf"
+    depends_on "curl"
 
     def install
         bin.install Dir["./images"]
