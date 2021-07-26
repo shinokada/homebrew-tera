@@ -12,16 +12,16 @@ class Tera < Formula
 
     def install
         bin.install Dir["./images"]
-        bin.install "delete_station"
-        bin.install "gistlib"
-        bin.install "lib"
+        bin.install "delete_station.sh"
+        bin.install "gistlib.sh"
+        bin.install "lib.sh"
         bin.install "LICENSE"
-        bin.install "list"
-        bin.install "lucky"
-        bin.install "play"
+        bin.install "list.sh"
+        bin.install "lucky.sh"
+        bin.install "play.sh"
         bin.install "README.md"
         bin.install "sample.json"
-        bin.install "search"
+        bin.install "search.sh"
         bin.install "tera"
     end
   
