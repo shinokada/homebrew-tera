@@ -1,28 +1,22 @@
 class Tera < Formula
     desc "Terminal radio, TERA, plays radio, CRUD favorites, search radio stations. Powered by Radio Browser API and MPV, a free, open source, and cross-platform media player."
-    url "https://github.com/shinokada/tera/archive/refs/tags/v0.3.15.tar.gz"
-    sha256 "f77583e09b08e1deef65447310db172852ef16d7f7edbec81ae8f3065041e0a0"
+    url "https://github.com/shinokada/tera/archive/refs/tags/v0.4.0.tar.gz"
+    sha256 "748874373578ddf47b6ceb6b6cdaa7fd822523aa5c2a31d9a20117637b8c56d7"
     license "MIT"
   
     depends_on "mpv"
     depends_on "gh"
     depends_on "jq"
     depends_on "fzf"
-    depends_on "curl"
+    depends_on "wget"
 
     def install
-        bin.install Dir["./images"]
-        bin.install "delete_station.sh"
-        bin.install "gistlib.sh"
-        bin.install "lib.sh"
-        bin.install "LICENSE"
-        bin.install "list.sh"
-        bin.install "lucky.sh"
-        bin.install "play.sh"
-        bin.install "README.md"
-        bin.install "sample.json"
-        bin.install "search.sh"
         bin.install "tera"
+        prefix.install Dir["./images"]
+        prefix.install Dir["lib"]
+        prefix.install "LICENSE"
+        prefix.install "README.md"
+        prefix.install "sample.json"
     end
   
     test do
