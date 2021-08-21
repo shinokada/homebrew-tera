@@ -12,11 +12,11 @@ class Tera < Formula
 
     def install
         bin.install "tera"
-        prefix.install Dir["./images"]
-        prefix.install Dir["lib"]
-        prefix.install "LICENSE"
-        prefix.install "README.md"
-        prefix.install "sample.json"
+        bin.install Dir["./images"]
+        bin.install Dir["lib"]
+        bin.install "LICENSE"
+        bin.install "README.md"
+        bin.install "sample.json"
     end
   
     test do
