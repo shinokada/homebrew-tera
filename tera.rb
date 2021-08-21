@@ -1,7 +1,7 @@
 class Tera < Formula
     desc "Terminal radio, TERA, plays radio, CRUD favorites, search radio stations. Powered by Radio Browser API and MPV, a free, open source, and cross-platform media player."
-    url "https://github.com/shinokada/tera/archive/refs/tags/v0.4.0.tar.gz"
-    sha256 "748874373578ddf47b6ceb6b6cdaa7fd822523aa5c2a31d9a20117637b8c56d7"
+    url "https://github.com/shinokada/tera/archive/refs/tags/v0.4.1.tar.gz"
+    sha256 "61a55857e117d9f67a0cd730ed5503ad066f7e1e0bb061718f1adcd37a291578"
     license "MIT"
   
     depends_on "mpv"
