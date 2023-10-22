@@ -15,7 +15,6 @@ class Tera < Formula
         bin.install Dir["images"]
         bin.install Dir["lib"]
         prefix.install "LICENSE"
-        prefix.install "README.md"
     end
   
     test do
