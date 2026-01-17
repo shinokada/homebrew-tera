@@ -1,23 +1,18 @@
-# homebrew-tera 
+# Shinokada Tera
 
-## Overview
+## How do I install these formulae?
 
+`brew install shinokada/tera/<formula>`
 
-## Requirement
+Or `brew tap shinokada/tera` and then `brew install <formula>`.
 
+Or, in a `brew bundle` `Brewfile`:
 
-## Usage
+```ruby
+tap "shinokada/tera"
+brew "<formula>"
+```
 
+## Documentation
 
-## Features
-
-
-## Reference
-
-
-## Author
-
-
-## License
-
-Please see license.txt.
+`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
