@@ -5,29 +5,22 @@ class Tera < Formula
   sha256 "828dc1a61b399fd2131048176b1fb36704bbed7ab7fa06383d5bab2f269c0ab9"
   license "MIT"
 
+  uses_from_macos "bash"
+
   depends_on "mpv"
   depends_on "jq"
   depends_on "fzf"
   depends_on "wget"
   depends_on "git"
 
-  # Skip all build phases - this is a simple Bash script installation
-  def configure
-    # No configuration needed
-  end
-
-  def build
-    # No build step needed
-  end
-
   def install
     bin.install "tera"
-    bin.install Dir["images"]
-    bin.install Dir["lib"]
+    prefix.install "images"
+    prefix.install "lib"
     prefix.install "LICENSE"
   end
 
   test do
-    system "false"
+    system "#{bin}/tera", "--version"
   end
 end
