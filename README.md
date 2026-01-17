@@ -1,16 +1,16 @@
-# Shinokada Tera
+# shinokada/tera
 
 ## How do I install these formulae?
 
-`brew install shinokada/tera/<formula>`
+`brew install shinokada/tera/tera`
 
-Or `brew tap shinokada/tera` and then `brew install <formula>`.
+Or `brew tap shinokada/tera` and then `brew install tera`.
 
 Or, in a `brew bundle` `Brewfile`:
 
 ```ruby
 tap "shinokada/tera"
-brew "<formula>"
+brew "tera"
 ```
 
 ## Documentation
