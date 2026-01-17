@@ -14,10 +14,11 @@ class Tera < Formula
   depends_on "git"
 
   def install
-    bin.install "tera"
-    prefix.install "images"
-    prefix.install "lib"
-    prefix.install "LICENSE"
+    # Install everything in libexec to preserve directory structure
+    libexec.install "tera", "lib", "images", "LICENSE"
+    
+    # Create a symlink from bin to the actual script
+    bin.install_symlink libexec/"tera"
   end
 
   test do
