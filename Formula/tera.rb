@@ -11,6 +11,15 @@ class Tera < Formula
   depends_on "wget"
   depends_on "git"
 
+  # Skip all build phases - this is a simple Bash script installation
+  def configure
+    # No configuration needed
+  end
+
+  def build
+    # No build step needed
+  end
+
   def install
     bin.install "tera"
     bin.install Dir["images"]
