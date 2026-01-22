@@ -4,8 +4,8 @@
 class Tera < Formula
   desc "Interactive Bash script terminal music radio player. Play your favorite radio station, CRUD your favorite lists, and explore new radio stations from your terminal. "
   homepage "https://tera.codewithshin.com/"
-  url "https://github.com/shinokada/tera/archive/refs/tags/v0.8.0.tar.gz"
-  sha256 "d5feecc28846094f61fa524b0ef3d25b3a57f31b4895118d57adeba31a9b61c1"
+  url "https://github.com/shinokada/tera/archive/refs/tags/v0.8.1.tar.gz"
+  sha256 "36898ec6f11748caa4a52ae933b449339657d67d71c3ea17bf7453bc6c7e37dd"
   license "MIT"
 
   uses_from_macos "bash"
