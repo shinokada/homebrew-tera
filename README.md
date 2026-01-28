@@ -35,6 +35,8 @@ class Tera < Formula
   sha256 "828dc1a61b399fd2131048176b1fb36704bbed7ab7fa06383d5bab2f269c0ab9"
   license "MIT"
 
+  uses_from_macos "bash"
+
   depends_on "mpv"
   depends_on "jq"
   depends_on "fzf"
@@ -42,14 +44,15 @@ class Tera < Formula
   depends_on "git"
 
   def install
-    bin.install "tera"
-    bin.install Dir["images"]
-    bin.install Dir["lib"]
-    prefix.install "LICENSE"
+    # Install everything in libexec to preserve directory structure
+    libexec.install "tera", "lib", "images", "LICENSE"
+    
+    # Create a symlink from bin to the actual script
+    bin.install_symlink libexec/"tera"
   end
 
   test do
-    system "false"
+    system "#{bin}/tera", "--version"
   end
 end
 ```
@@ -60,3 +63,11 @@ git add .
 git commit -m "v0.x.x"
 git push -u origin main // or ggp
 ```
+
+## Notes
+The tera script uses readlinkf to find its own location and then looks for lib/ and images/ directories relative to that location. By installing everything together in libexec and symlinking the main script to bin, we preserved the directory structure the script expects.
+For future releases, you now have a working Formula pattern:
+
+- Install everything in libexec to keep the directory structure intact
+- Use bin.install_symlink to make the main script accessible from the command line
+- The uses_from_macos "bash" declaration tells Homebrew this is a bash script that doesn't need building
