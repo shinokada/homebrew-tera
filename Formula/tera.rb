@@ -1,28 +1,28 @@
 class Tera < Formula
   desc "Terminal-based internet radio player"
   homepage "https://shinokada.github.io/tera/"
-  version "1.0.0-rc.2"
+  version "1.0.0-rc.3"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/shinokada/tera/releases/download/v1.0.0-rc.2/tera_1.0.0-rc.2_darwin_amd64.tar.gz"
-      sha256 "dc9d409de414dcae271356f15110e39d5a573dd8ab9f467a903c409080591667"
+      url "https://github.com/shinokada/tera/releases/download/v1.0.0-rc.3/tera_1.0.0-rc.3_darwin_amd64.tar.gz"
+      sha256 "1e3ca5c91235033bfadf7a8b1cca4cfe4ca6eaa4ea2c52e424c1f9c81852b214"
     end
     on_arm do
-      url "https://github.com/shinokada/tera/releases/download/v1.0.0-rc.2/tera_1.0.0-rc.2_darwin_arm64.tar.gz"
-      sha256 "85f5f25e7d1b55436a288878d8bd8d05ae09b5cf48b7177287eb11b6b21377c5"
+      url "https://github.com/shinokada/tera/releases/download/v1.0.0-rc.3/tera_1.0.0-rc.3_darwin_arm64.tar.gz"
+      sha256 "e4827769178c83ca4c46b9f7cdf549c001c9cb07a981ce80f3684a6378e83726"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/shinokada/tera/releases/download/v1.0.0-rc.2/tera_1.0.0-rc.2_linux_amd64.tar.gz"
-      sha256 "9e83477d566ee402c15e7e99c23bdbbcd1929bd157409f6e96fc60cb18b85985"
+      url "https://github.com/shinokada/tera/releases/download/v1.0.0-rc.3/tera_1.0.0-rc.3_linux_amd64.tar.gz"
+      sha256 "ed43b33cdd609f3e28b4586b2e27c1da2091302b976a941af3ee3b10910bab71"
     end
     on_arm do
-      url "https://github.com/shinokada/tera/releases/download/v1.0.0-rc.2/tera_1.0.0-rc.2_linux_arm64.tar.gz"
-      sha256 "c36e30b187bdd6afd711543428b1d70991e038b6ed0d99066d95d804bcb98e5c"
+      url "https://github.com/shinokada/tera/releases/download/v1.0.0-rc.3/tera_1.0.0-rc.3_linux_arm64.tar.gz"
+      sha256 "24f489dbf02baa6288968e7a7e49cc50e0c2339684134af5062542acca30baa4"
     end
   end
 
