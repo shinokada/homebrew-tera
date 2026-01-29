@@ -1,7 +1,7 @@
 class Tera < Formula
   desc "Terminal-based internet radio player"
   homepage "https://shinokada.github.io/tera/"
-  version "1.0.0-rc.1"
+  version "1.0.0-rc.2"
   license "MIT"
 
   on_macos do
