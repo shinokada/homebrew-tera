@@ -5,23 +5,23 @@
 class Tera < Formula
   desc "Terminal-based internet radio player"
   homepage "https://github.com/shinokada/tera"
-  version "1.0.0-rc.9"
+  version "1.0.0-rc.10"
   license "MIT"
 
   depends_on "mpv" => :required
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/shinokada/tera/releases/download/v1.0.0-rc.9/tera_1.0.0-rc.9_darwin_amd64.tar.gz"
-      sha256 "3e2033379223cd38c2f0fe4d32ae2418b74e299834151c05af0c5ecf75b9d148"
+      url "https://github.com/shinokada/tera/releases/download/v1.0.0-rc.10/tera_1.0.0-rc.10_darwin_amd64.tar.gz"
+      sha256 "388c49da2a60e5f32c018047c2b660300146f3746eb85eb68f36c75d8c4e1e7a"
 
       def install
         bin.install "tera"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/shinokada/tera/releases/download/v1.0.0-rc.9/tera_1.0.0-rc.9_darwin_arm64.tar.gz"
-      sha256 "a40655778bb48b7cbc2a9868ccba3fd8f6bdf27bb6109f3d7aa86d448cd70670"
+      url "https://github.com/shinokada/tera/releases/download/v1.0.0-rc.10/tera_1.0.0-rc.10_darwin_arm64.tar.gz"
+      sha256 "6fbf150825a846202b91dbcda5e07b507382c7229c9cac3ecc59c78e3b232ef8"
 
       def install
         bin.install "tera"
@@ -31,15 +31,15 @@ class Tera < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/shinokada/tera/releases/download/v1.0.0-rc.9/tera_1.0.0-rc.9_linux_amd64.tar.gz"
-      sha256 "1637cd30bcd4dcdac782db5dcf9a9c80c6d717becd02e0f0ed1dd8609dc8d7fe"
+      url "https://github.com/shinokada/tera/releases/download/v1.0.0-rc.10/tera_1.0.0-rc.10_linux_amd64.tar.gz"
+      sha256 "fe1ed8872410980680befc862aece59419c7eb6a28c163c3d4220030278aa66a"
       def install
         bin.install "tera"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/shinokada/tera/releases/download/v1.0.0-rc.9/tera_1.0.0-rc.9_linux_arm64.tar.gz"
-      sha256 "cb5c311e9b7ad3287ccdb1efae08d6f18558acaa056f921eadfac80b3a4ebf17"
+      url "https://github.com/shinokada/tera/releases/download/v1.0.0-rc.10/tera_1.0.0-rc.10_linux_arm64.tar.gz"
+      sha256 "506878a3ce460dec273b29bd8a462680f8f1e4ea55f4aded2471827c7f2bf04e"
       def install
         bin.install "tera"
       end
