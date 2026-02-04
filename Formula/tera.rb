@@ -5,23 +5,23 @@
 class Tera < Formula
   desc "Terminal-based internet radio player"
   homepage "https://github.com/shinokada/tera"
-  version "1.4.0"
+  version "1.5.0"
   license "MIT"
 
   depends_on "mpv" => :required
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/shinokada/tera/releases/download/v1.4.0/tera_1.4.0_darwin_amd64.tar.gz"
-      sha256 "2e4ca98efca2250d8846c73b0b0c06f76f67a0db04426149af45d278f3554e02"
+      url "https://github.com/shinokada/tera/releases/download/v1.5.0/tera_1.5.0_darwin_amd64.tar.gz"
+      sha256 "674665505f659f2d54aee9a15aa06bb944d5f4003d2f754b637b88e969c3bc4d"
 
       def install
         bin.install "tera"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/shinokada/tera/releases/download/v1.4.0/tera_1.4.0_darwin_arm64.tar.gz"
-      sha256 "3189c1488e7524c3b61722ac0e9ad9a09bf304c87ad17a16b9fd92f2e7a7e0c6"
+      url "https://github.com/shinokada/tera/releases/download/v1.5.0/tera_1.5.0_darwin_arm64.tar.gz"
+      sha256 "62ddb6976673eeddd3cb0bf6a16c9267783ebe3e69a9bd62427a547260c5cdde"
 
       def install
         bin.install "tera"
@@ -31,15 +31,15 @@ class Tera < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/shinokada/tera/releases/download/v1.4.0/tera_1.4.0_linux_amd64.tar.gz"
-      sha256 "e6df06841df8c61068c8b304b1c7b61e17a25b2c07597f14008774285c878b51"
+      url "https://github.com/shinokada/tera/releases/download/v1.5.0/tera_1.5.0_linux_amd64.tar.gz"
+      sha256 "15115ceb751c02776b072c5c4429940bceb3cf1eb3c9a618c154d4f42df73536"
       def install
         bin.install "tera"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/shinokada/tera/releases/download/v1.4.0/tera_1.4.0_linux_arm64.tar.gz"
-      sha256 "5886e855f651d5824a4316d80e9df634a87d634fe345d15484de0be42e5a0abb"
+      url "https://github.com/shinokada/tera/releases/download/v1.5.0/tera_1.5.0_linux_arm64.tar.gz"
+      sha256 "3450b5e08357ed5ba7eac7cbca925f1abebed75caaf342382270960429ef6f7b"
       def install
         bin.install "tera"
       end
