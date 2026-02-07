@@ -13,7 +13,7 @@ class Tera < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/shinokada/tera/releases/download/v2.0.0/tera_2.0.0_darwin_amd64.tar.gz"
-      sha256 "3e143b6f265a4294bfbcbe40c076fe48a1b6987f0e272412ed978d1149122622"
+      sha256 "be03aa139b321655233cc616e40b2790d73e1940ad22c4e3591957301c377d32"
 
       def install
         bin.install "tera"
@@ -21,7 +21,7 @@ class Tera < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/shinokada/tera/releases/download/v2.0.0/tera_2.0.0_darwin_arm64.tar.gz"
-      sha256 "68086aec122dc855073c105507b853726d9c7e40d8304a27027058c4f44ee595"
+      sha256 "28203ad0393a7b8faed63659201cb6250d176ce61061f026eda901163959f91a"
 
       def install
         bin.install "tera"
@@ -32,14 +32,14 @@ class Tera < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/shinokada/tera/releases/download/v2.0.0/tera_2.0.0_linux_amd64.tar.gz"
-      sha256 "878864621ea53747aa1076e85a3692c48c9abc0d48e1cdfe4627cf0ce1c3144e"
+      sha256 "20be3eeddd0287b6ece6b6a388578c462c73c39935c42bd876b2f2dc5ac5a8df"
       def install
         bin.install "tera"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/shinokada/tera/releases/download/v2.0.0/tera_2.0.0_linux_arm64.tar.gz"
-      sha256 "5f5fa5b09b787488b4cf34c090f91f8322f4985a1565cb9bc61d0c933caccda8"
+      sha256 "51982789be757179470792fbfdeffd951dc37c304e2640ab7c9df5b7ce0c1910"
       def install
         bin.install "tera"
       end
