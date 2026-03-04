@@ -5,23 +5,23 @@
 class Tera < Formula
   desc "Terminal-based internet radio player"
   homepage "https://github.com/shinokada/tera"
-  version "3.5.5"
+  version "3.6.0"
   license "MIT"
 
   depends_on "mpv" => :required
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/shinokada/tera/releases/download/v3.5.5/tera_3.5.5_darwin_amd64.tar.gz"
-      sha256 "163771f1178070b6763b8c8021528fb404f26404f3e48fa52b81eb4e0c021a4e"
+      url "https://github.com/shinokada/tera/releases/download/v3.6.0/tera_3.6.0_darwin_amd64.tar.gz"
+      sha256 "a78f7df64bcae84f6f6e50b8611720b043be24e78e3c94d3f78deb3a0bb2ec32"
 
       define_method(:install) do
         bin.install "tera"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/shinokada/tera/releases/download/v3.5.5/tera_3.5.5_darwin_arm64.tar.gz"
-      sha256 "7424bbd33021dbaf000f0e2cf9e9e40ac64a9327aa270d3ecb3d750d827fe027"
+      url "https://github.com/shinokada/tera/releases/download/v3.6.0/tera_3.6.0_darwin_arm64.tar.gz"
+      sha256 "563a7b954aad4f4d7095325bfc17d69582274efd7ebec3f9403fb3aa0fccd2f0"
 
       define_method(:install) do
         bin.install "tera"
@@ -31,15 +31,15 @@ class Tera < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/shinokada/tera/releases/download/v3.5.5/tera_3.5.5_linux_amd64.tar.gz"
-      sha256 "c89c2effc04752e03a69edaeffa7946d2ce4fa06381cddad6fa7d986dedc60f3"
+      url "https://github.com/shinokada/tera/releases/download/v3.6.0/tera_3.6.0_linux_amd64.tar.gz"
+      sha256 "45adbf5c6841490c5d8e7ba78e1a3ed1267c25a2b62835f597ae30582dd4cbbe"
       define_method(:install) do
         bin.install "tera"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/shinokada/tera/releases/download/v3.5.5/tera_3.5.5_linux_arm64.tar.gz"
-      sha256 "790d84963fda7082e1018f468bc46ed7631945f8f1ec47c38764285a47bf3794"
+      url "https://github.com/shinokada/tera/releases/download/v3.6.0/tera_3.6.0_linux_arm64.tar.gz"
+      sha256 "01946e1b4cea328138d43f8329cbadc4d6aae8f2adbdda7f239a98383454ffd6"
       define_method(:install) do
         bin.install "tera"
       end
